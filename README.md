@@ -74,14 +74,14 @@ DataSource<Map<String, Object>, String> origin = new MyDatabaseSource();
 CacheLayer<String, String> memoryCache = new InMemoryCacheLayer<>("L1");
 
 // 3. Key Generator
-CacheKeyGenerator<Map<String, Object>, String> keyGen = new EdiStyleKeyGenerator();
+CacheKeyGenerator keyGen = new EdiStyleKeyGenerator();
 ```
 
 ### 2. Initialize Service
 
 ```java
 DataSource<Map<String, Object>, String> cacheService = 
-    new QueryCacheService<>(origin, List.of(memoryCache), keyGen);
+    new QueryCacheService<>(origin, List.of(memoryCache), (CacheKeyGenerator) keyGen);
 ```
 
 ### 3. query
