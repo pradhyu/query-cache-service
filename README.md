@@ -58,8 +58,8 @@ sequenceDiagram
     Note over Query: {table=orders, status=OPEN, min=50}
     Query->>KG: generateKey(map)
     KG->>KG: 1. Extract Table (orders)
-    KG->>KG: 2. Sort Filters (min=50;status=OPEN)
-    KG->>Key: Returns "orders|min=50;status=OPEN"
+    KG->>KG: 2. Sort Filters (min=50,status=OPEN)
+    KG->>Key: Returns "orders|min=50,status=OPEN"
 ```
 
 ## Usage
