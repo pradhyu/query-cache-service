@@ -38,7 +38,7 @@ graph TD
     style L1 fill:#f5f5f5,stroke:#333,color:#000
     style L2 fill:#e3f2fd,stroke:#333,color:#000
     
-    linkStyle default stroke:#333,stroke-width:1px,color:#000
+    linkStyle default stroke:#fff,stroke-width:1px,color:#fff
 ```
 
 ## Compact Key Strategy (EDI-Style)
@@ -48,7 +48,7 @@ The default `EdiStyleKeyGenerator` prevents cache pollution and ensures readabil
 **Format:** `TABLE | FILTERS | OPTIONAL_COLUMNS`
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'signalTextColor': '#000000', 'actorTextColor': '#000000', 'noteTextColor': '#000000'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': { 'signalColor': '#ffffff', 'signalTextColor': '#ffffff', 'actorTextColor': '#000000', 'noteTextColor': '#000000'}}}%%
 sequenceDiagram
     participant Query as Query Map
     participant KG as KeyGenerator
