@@ -31,12 +31,12 @@ graph TD
     L1 -->|Put K, R| Service
     Service -->|Return R| Client
     
-    style Service fill:#ff9a9e,stroke:#333,stroke-width:2px,color:#fff
-    style KG fill:#a18cd1,stroke:#333,color:#fff
-    style Origin fill:#84fab0,stroke:#333,color:#fff
-    style Client fill:#fbc2eb,stroke:#333,color:#fff
-    style L1 fill:#fad0c4,stroke:#333
-    style L2 fill:#a1c4fd,stroke:#333
+    style Service fill:#eceff1,stroke:#333,stroke-width:2px,color:#000
+    style KG fill:#d1c4e9,stroke:#333,color:#000
+    style Origin fill:#c8e6c9,stroke:#333,color:#000
+    style Client fill:#bbdefb,stroke:#333,color:#000
+    style L1 fill:#f5f5f5,stroke:#333
+    style L2 fill:#e3f2fd,stroke:#333
 ```
 
 ## Compact Key Strategy (EDI-Style)
